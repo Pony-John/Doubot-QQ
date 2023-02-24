@@ -1,0 +1,235 @@
+[0m2023-02-24 10:59:11 V/Net 3488420157: Invalidate caches because hash file not available.[0m
+[0m2023-02-24 10:59:11 V/Net 3488420157: No server list cached.[0m
+[92m2023-02-24 10:59:11 I/Net 3488420157: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-02-24 10:59:11 I/Net 3488420157: Successfully fetched ecdh public key from server.[0m
+[0m2023-02-24 10:59:11 V/Net 3488420157: Send: wtlogin.login(9:password-login)[0m
+[0m2023-02-24 10:59:11 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:03:49 V/Net 3488420157: Send: wtlogin.login(2:submit-slider)[0m
+[0m2023-02-24 11:03:49 V/Net 3488420157: Recv: wtlogin.login[0m
+[93m2023-02-24 11:03:49 W/Net 3488420157: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:248)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:331)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	... 9 more
+[0m
+[93m2023-02-24 11:03:49 W/Net 3488420157: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=))[0m
+[0m2023-02-24 11:04:04 V/Net 3488420157: Validated caches.[0m
+[0m2023-02-24 11:04:04 V/Net 3488420157: No server list cached.[0m
+[92m2023-02-24 11:04:04 I/Net 3488420157: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-02-24 11:04:04 I/Net 3488420157: Successfully fetched ecdh public key from server.[0m
+[0m2023-02-24 11:04:04 V/Net 3488420157: Send: wtlogin.login(9:password-login)[0m
+[0m2023-02-24 11:04:04 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:06:54 V/Net 3488420157: Validated caches.[0m
+[0m2023-02-24 11:06:54 V/Net 3488420157: No server list cached.[0m
+[92m2023-02-24 11:06:54 I/Net 3488420157: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-02-24 11:06:54 I/Net 3488420157: Successfully fetched ecdh public key from server.[0m
+[0m2023-02-24 11:06:54 V/Net 3488420157: Send: wtlogin.login(9:password-login)[0m
+[0m2023-02-24 11:06:55 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:08:32 V/Net 3488420157: Send: wtlogin.login(2:submit-slider)[0m
+[0m2023-02-24 11:08:32 V/Net 3488420157: Recv: wtlogin.login[0m
+[93m2023-02-24 11:08:32 W/Net 3488420157: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:248)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:331)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	... 9 more
+[0m
+[93m2023-02-24 11:08:32 W/Net 3488420157: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=6, title=登录失败, message=服务连接中，请稍后再试。(0x6), errorInfo=))[0m
+[0m2023-02-24 11:08:41 V/Net 3488420157: Validated caches.[0m
+[0m2023-02-24 11:08:41 V/Net 3488420157: No server list cached.[0m
+[92m2023-02-24 11:08:41 I/Net 3488420157: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-02-24 11:08:41 I/Net 3488420157: Successfully fetched ecdh public key from server.[0m
+[0m2023-02-24 11:08:41 V/Net 3488420157: Send: wtlogin.login(9:password-login)[0m
+[0m2023-02-24 11:08:41 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:16:16 V/Net 3488420157: Send: wtlogin.login(2:submit-slider)[0m
+[0m2023-02-24 11:16:16 V/Net 3488420157: Recv: wtlogin.login[0m
+[93m2023-02-24 11:16:16 W/Net 3488420157: Exception in resumeConnection.
+net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=155, title=登录失败, message=你太久没有操作，请重新登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.handler.CommonNetworkHandler$StateConnecting$startState$2.invokeSuspend(CommonNetworkHandler.kt:248)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+Caused by: net.mamoe.mirai.network.WrongPasswordException: Error(bot=Bot(3488420157), code=155, title=登录失败, message=你太久没有操作，请重新登录。, errorInfo=)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl.doLogin(SsoProcessor.kt:331)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl$SlowLoginImpl$doLogin$1.invokeSuspend(SsoProcessor.kt)
+	... 9 more
+[0m
+[93m2023-02-24 11:16:16 W/Net 3488420157: Network selector received exception, closing bot. (net.mamoe.mirai.internal.network.components.LoginFailedExceptionAsNetworkException: Error(bot=Bot(3488420157), code=155, title=登录失败, message=你太久没有操作，请重新登录。, errorInfo=))[0m
+[0m2023-02-24 11:16:47 V/Net 3488420157: Validated caches.[0m
+[0m2023-02-24 11:16:47 V/Net 3488420157: No server list cached.[0m
+[92m2023-02-24 11:16:47 I/Net 3488420157: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2023-02-24 11:16:47 I/Net 3488420157: Successfully fetched ecdh public key from server.[0m
+[0m2023-02-24 11:16:47 V/Net 3488420157: Send: wtlogin.login(9:password-login)[0m
+[0m2023-02-24 11:16:47 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:17:17 V/Net 3488420157: Send: wtlogin.login(2:submit-slider)[0m
+[0m2023-02-24 11:17:18 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:17:25 V/Net 3488420157: Send: wtlogin.login(8:request-sms)[0m
+[0m2023-02-24 11:17:25 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:17:36 V/Net 3488420157: Send: wtlogin.login(7:submit-sms)[0m
+[0m2023-02-24 11:17:36 V/Net 3488420157: Recv: wtlogin.login[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: StatSvc.register(online)[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Server time updated, serverTime: 1677208657, diff: 0ms=0.0s[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: StatSvc.register[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: No BdhSession cache[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Syncing friend message history...[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Start loading stranger list...[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Start loading friend list...[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Start loading friendGroup list...[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: No OtherClient online.[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Start loading group list...[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: OidbSvc.0x496[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Syncing friend message history: Success.[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: OidbSvc.0x5d2_0[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Successfully loaded stranger list: 0 in total[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: friendlist.getFriendGroupList[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Loading friend list: 4/4[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Successfully loaded friend list: 4 in total[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: friendlist.getFriendGroupList[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Loading friendGroup list: 4/4[0m
+[92m2023-02-24 11:17:37 I/Net 3488420157: Successfully loaded friendGroup list: 4 in total[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: friendlist.GetTroopListReqV2[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:17:37 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:17:38 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:17:38 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:17:38 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:17:38 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:17:38 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2023-02-24 11:17:38 I/Net 3488420157: Successfully loaded group list: 1 in total.[0m
+[92m2023-02-24 11:17:38 I/Net 3488420157: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2023-02-24 11:17:38 I/Net 3488420157: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Server list: 36.155.244.199:80, 36.155.201.31:14000, 111.30.187.201:443, msfwifi.3g.qq.com:8080, 111.31.200.170:80, 111.30.169.33:8080, 36.155.245.173:14000, 111.30.170.211:443, 120.232.130.47:80, 120.232.31.250:80.[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: No BdhSession to save to cache[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Saving server list to cache[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Recv: ConfigPushSvc.PushReq[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Saving bdh session to cache[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-02-24 11:17:40 V/Net 3488420157: Recv: ConfigPushSvc.PushReq[0m
+[0m2023-02-24 11:24:58 V/Net 3488420157: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2023-02-24 11:24:58 V/Net 3488420157: Recv: StatSvc.GetDevLoginInfo[0m
+[0m2023-02-24 11:24:59 V/Net 3488420157: Recv: StatSvc.SvcReqMSFLoginNotify[0m
+[0m2023-02-24 11:25:14 V/Net 3488420157: Recv: StatSvc.SvcReqMSFLoginNotify[0m
+[0m2023-02-24 11:35:22 V/Net 3488420157: Validated caches.[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Loading server list from cache.[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Server list: 36.155.244.199:80, 36.155.201.31:14000, 111.30.187.201:443, msfwifi.3g.qq.com:8080, 111.31.200.170:80, 111.30.169.33:8080, 36.155.245.173:14000, 111.30.170.211:443, 120.232.130.47:80, 120.232.31.250:80.[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: ECDH key is valid.[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: wtlogin.exchange_emp(10:fast-login)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: wtlogin.exchange_emp[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: StatSvc.register(online)[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Server time updated, serverTime: 1677209723, diff: 0ms=0.0s[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: StatSvc.register[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Loading BdhSession from cache file[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Syncing friend message history...[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Start loading friend list...[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Start loading stranger list...[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Start loading friendGroup list...[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: OidbSvc.0x5d2_0[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Successfully loaded stranger list: 0 in total[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Start loading group list...[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: OidbSvc.0x496[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: No OtherClient online.[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: friendlist.getFriendGroupList[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Loading friendGroup list: 4/4[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Successfully loaded friendGroup list: 4 in total[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: friendlist.getFriendGroupList[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Loading friend list: 4/4[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Successfully loaded friend list: 4 in total[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: friendlist.GetTroopListReqV2[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[92m2023-02-24 11:35:23 I/Net 3488420157: Syncing friend message history: Success.[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:35:23 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:35:24 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:35:24 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:35:24 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 11:35:24 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 11:35:24 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2023-02-24 11:35:24 I/Net 3488420157: Successfully loaded group list: 1 in total.[0m
+[92m2023-02-24 11:35:24 I/Net 3488420157: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2023-02-24 11:35:24 I/Net 3488420157: Scheduled key refresh in 23h 55min 0.0s.[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Server list: 111.31.205.244:8080, 120.232.130.46:80, 111.31.205.218:443, 36.155.201.31:80, 36.155.213.147:14000, 36.155.201.197:14000, 111.31.200.230:8080, 120.232.67.190:80, 111.31.205.231:80, msfwifi.3g.qq.com:8080.[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Saving bdh session to cache[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Saving server list to cache[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Recv: ConfigPushSvc.PushReq[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Saving bdh session to cache[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2023-02-24 11:35:26 V/Net 3488420157: Recv: ConfigPushSvc.PushReq[0m
+[0m2023-02-24 11:36:07 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:36:07 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:36:07 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:36:07 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:38:14 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:38:15 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:44:27 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:44:27 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:47:39 V/Net 3488420157: Recv: OnlinePush.PbPushTransMsg[0m
+[0m2023-02-24 11:48:59 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:48:59 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:51:50 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:51:50 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 11:59:01 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 11:59:01 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:05:29 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:05:29 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:05:42 V/Net 3488420157: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2023-02-24 12:05:42 V/Net 3488420157: Recv: friendlist.GetTroopListReqV2[0m
+[0m2023-02-24 12:05:42 V/Net 3488420157: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2023-02-24 12:05:43 V/Net 3488420157: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2023-02-24 12:05:43 V/Net 3488420157: Send: ProfileService.Pb.ReqSystemMsgNew.Group(ProfileService.Pb.ReqSystemMsgNew.Group)[0m
+[0m2023-02-24 12:05:43 V/Net 3488420157: Recv: ProfileService.Pb.ReqSystemMsgNew.Group[0m
+[0m2023-02-24 12:05:55 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:05:55 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:06:04 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:06:04 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:06:19 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:06:19 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:06:29 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:06:29 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:06:50 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:06:50 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
+[0m2023-02-24 12:07:23 V/Net 3488420157: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2023-02-24 12:07:23 V/Net 3488420157: Recv: MessageSvc.PbSendMsg[0m
