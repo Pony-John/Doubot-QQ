@@ -1,5 +1,7 @@
 import os, sys
 sys.path.append(os.getcwd())
+import random
+from lottery import Dou_Lottery
 
 from io import BytesIO
 from typing import Union
@@ -36,6 +38,16 @@ app = Ariadne(
     ),
 )
 
+# 判断输入的触发指令，并推送给对应函数
+def dou_trigger_fit(command):
+    if command in config.dou_trigger.online_trigger:
+        resp = random.choice(config.dou_resp.online_resp)
+    elif command in config.dou_trigger.lottery_trigger:
+        resp = Dou_Lottery(command)
+    else:
+        resp = "指令不存在！"
+    return resp
+
 async def create_timeout_task(target: Union[Friend, Group], source: Source):
     await asyncio.sleep(config.response.timeout)
     await app.send_message(target, config.response.timeout_format, quote=source if config.response.quote else False)
@@ -64,13 +76,18 @@ async def handle_message(target: Union[Friend, Group], session_id: str, message:
             if resp:
                 return config.response.rollback_success + '\n' + resp
             return config.response.rollback_fail
-
         
-        # 正常交流
-        resp = await session.get_chat_response(message)
-        if resp:
-            logger.debug(f"{session_id} - {resp}")
-            return resp.strip()
+        # 二次开发指令处理
+        if message.strip() in config.dou_trigger.all_triggers:
+            resp = dou_trigger_fit(message.strip())
+            return resp
+        
+        # 正常交流(GPT-3)
+        else:
+            resp = await session.get_chat_response(message)
+            if resp:
+                logger.debug(f"{session_id} - {resp}")
+                return resp.strip()
     except Exception as e:
         logger.exception(e)
         return config.response.error_format.format(exc=e)

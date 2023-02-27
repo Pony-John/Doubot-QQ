@@ -69,12 +69,20 @@ class TextToImage(BaseModel):
 class Trigger(BaseModel):
     prefix: List[str] = [""]
     """触发响应的前缀，默认不需要"""
-    require_mention: Literal["at", "mention", "none"] = "at"
+    require_mention: Literal["at", "mention", "none"] = "mention"
     """群内 [需要 @ 机器人 / 需要 @ 或以机器人名称开头 / 不需要 @] 才响应（请注意需要先 @ 机器人后接前缀）"""
     reset_command: List[str] = ["重置会话"]
     """重置会话的命令"""
     rollback_command: List[str] = ["回滚会话"]
     """回滚会话的命令"""
+
+class Dou_Trigger(BaseModel):
+    online_trigger: List[str] = ["豆豆在吗","豆豆在不","豆豆在线吗","test"]
+    lottery_trigger: List[str] = ["豆豆大乐透","豆豆双色球"]
+    all_triggers: List[str] = online_trigger + lottery_trigger
+
+class Dou_Response(BaseModel):
+    online_resp: List[str] = ["豆豆在的","豆豆不在","豆豆在睡觉","豆豆在学习","豆豆现在没信号","豆豆手机欠费了"]
 
 
 class Response(BaseModel):
@@ -125,6 +133,8 @@ class Config(BaseModel):
     openai: Union[OpenAIEmailAuth, OpenAISessionTokenAuth, OpenAIAPIKey]
     text_to_image: TextToImage = TextToImage()
     trigger: Trigger = Trigger()
+    dou_trigger: Dou_Trigger = Dou_Trigger()
+    dou_resp: Dou_Response = Dou_Response()
     response: Response = Response()
     system: System = System()
     presets: Preset = Preset()
