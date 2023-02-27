@@ -84,7 +84,7 @@ async def handle_message(target: Union[Friend, Group], session_id: str, message:
         
         # 正常交流(GPT-3)
         else:
-            resp = await session.get_chat_response(message)
+            resp = await session.get_chat_response(message.replace("豆豆",""))
             if resp:
                 logger.debug(f"{session_id} - {resp}")
                 return resp.strip()

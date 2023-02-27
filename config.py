@@ -69,9 +69,9 @@ class TextToImage(BaseModel):
 class Trigger(BaseModel):
     prefix: List[str] = [""]
     """触发响应的前缀，默认不需要"""
-    require_mention: Literal["at", "mention", "none"] = "mention"
+    require_mention: Literal["at", "mention", "none"] = "at"
     """群内 [需要 @ 机器人 / 需要 @ 或以机器人名称开头 / 不需要 @] 才响应（请注意需要先 @ 机器人后接前缀）"""
-    reset_command: List[str] = ["重置会话"]
+    reset_command: List[str] = ["重置会话","重置对话"]
     """重置会话的命令"""
     rollback_command: List[str] = ["回滚会话"]
     """回滚会话的命令"""
